@@ -1,0 +1,30 @@
+<html>
+    <head></head>
+    <body>
+        <script>
+            var num = +prompt()
+            var count =0
+            var rem 
+            var temp=num
+            var arm=num
+            var sum =0
+            while(num>0){
+                rem=num%10
+                count++
+                num=parseInt(num/10)
+            }
+            while(temp>0){
+               var rem1=temp%10
+                sum=sum+rem1**count
+                temp=parseInt(temp/10)
+            }
+            if(arm==sum)
+            {
+                console.log("armstong number")
+            }
+            else{
+                console.log("not amstrong number")
+            }
+        </script>
+    </body>
+</html>

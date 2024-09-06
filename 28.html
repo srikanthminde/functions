@@ -1,0 +1,28 @@
+<html>
+    <head></head>
+    <body>
+        <script>
+           function strong (m,n){
+            
+               for( var j=m;j<=n;j++){
+                    var sum=0
+                   var num = j
+                    var temp = j
+                    while(num>0){
+                        var rem = (num%10)
+                        var product = 1
+                    for(var i=rem;i>=1;i--){
+                        product=product*i
+                    }
+                   sum=sum+product
+                   num=parseInt(num/10)}
+                   if(temp==sum){
+                    console.log(j)
+                   }
+                   
+                }
+             }
+                    strong( 1,145)
+        </script>
+    </body>
+</html> 

@@ -1,0 +1,95 @@
+<html>
+    <head></head>
+    <body>
+        <script>
+
+           function mobile (model,price,version,snapdragen){
+
+            this.model=model;
+            this.price=price;
+            this.version=version;
+            this.snapdragen=snapdragen;
+           }
+           var srikanthmobile=new mobile("realmi",16000,"andriod",65.6)
+           var rammobile=new mobile("vivo",15000,"andriod",70.1)
+           var laxmanmobile=new mobile("realmi2",15000,"android",52.3)
+           var geethamobile=new mobile("iphone 15pro max",150500,"ios",110.5)
+           console.log (srikanthmobile)
+           console.log (rammobile)
+           console.log(laxmanmobile)
+           console.log(geethamobile)
+
+
+
+            function item (name,price,manufacter,delivary,discount){
+                this.name=name
+                this.price=price
+                this.manufacter=manufacter
+                this.delivary=delivary
+                this.discount=discount
+               this. getFinalprice= function(){
+                return this.price-(this.price*0.01*this.discount)
+                
+               }
+            }
+
+             var ramitem =new item("laptop",65000,"usa","flipcart",2)
+             var  babluitem = new item("washing michine",35300,"kanada","amazon",1)
+             var divyaitem = new item("iphone 14+",72000,"usa","flipcart",1)
+             console.log(ramitem)
+             console.log(babluitem)
+             console.log(divyaitem)
+             console.log(divyaitem.getFinalprice())
+             console.log(babluitem.getFinalprice())
+             console.log(ramitem.getFinalprice())
+
+    
+        function students (a,b,c,d,e,f){
+        this.name = a
+        this.qualification= b
+        this.inter= c
+        this.dob=d
+        this.village= e
+        this.state= f
+
+        this.getAge = function(){
+
+            var siddipet1=(new Date(this.dob)).getTime()
+            var tt= (new Date()).getTime()
+            console.log(tt-siddipet1/(1000*60*60*24*365))
+        } 
+
+        } 
+        //objects
+        var std1 = new students( "Srikanth","degree","diploma","1/5/2001","kodakandla","telangana")
+        var std2 = new students("Laxman","btech","vizak","1/2/1998","ramapuram","andra pradesh")
+        var std3 = new students("Sai bhai","degree","githanjali","3/3/2000","thimapur","telangana")
+        
+
+
+
+        std1.getAge()
+        std2.getAge()
+        std3.getAge()
+        console.dir(std1)
+        console.dir(std2)
+
+        var std1=(new Date(std1.dob)).getTime()
+        var tt= (new Date()).getTime 
+        console.log((tt-std1)/(1000*60*60*24*365))
+      
+
+
+
+
+
+
+
+
+
+
+
+
+         </script>
+    </body>
+</html>

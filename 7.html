@@ -1,0 +1,30 @@
+<html>
+    <head></head>
+    <body>
+        <script>
+        
+        
+          function polindrom (n)
+
+          {
+           var temp=n
+          var sum = 0
+          var x
+            while(n!==0){
+                x =n%10
+                sum = sum*10+x
+               n= parseInt(n/10)
+            }
+            if( temp===sum)
+            {
+                console.log("polindrom")
+            }
+            else{
+              console.log ( "not polindrom")
+            }
+
+          }
+          polindrom(55)
+        </script>
+    </body>
+</html>

@@ -1,0 +1,21 @@
+<html>
+    <head></head>
+    <body>
+        <script>
+             function rev(a){        
+                var rem =0;
+               
+                while(a>0)
+              {
+                var rem2=a%10;
+                rem=rem*10+rem2;
+                a=parseInt(a/10)
+              }
+                   return(rem)
+             }
+              var reverse = rev(12345);
+             console.log(reverse);
+                        
+        </script>
+    </body>
+</html>

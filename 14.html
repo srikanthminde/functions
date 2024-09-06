@@ -1,0 +1,24 @@
+<html>
+    <head></head>
+    <body>
+        <script>
+            function rev (n)
+        
+            {
+
+                var sum =0
+              
+                while(n>0)
+                {
+                    rem = n%10
+                    sum=sum*10 +rem
+                    n=parseInt(n/10)
+                }
+                return sum
+            }
+            var n=+prompt()
+
+            console.log (rev (n))
+        </script>
+    </body>
+</html>
